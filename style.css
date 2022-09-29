@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body{
+     font-family: 'Courier New', Courier, monospace;
+    }
+    .header {
+    background-color:  light gray;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    }
+    .row {
+        display: flex;
+    }
+    .column {
+    padding: 10px;
+    height: 250px;
+    }
+    
+    .column.side {
+        flex: 3;
+    }
+    .column.middle {
+        flex:6
+    }
+    .footer {
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: left;
+    }
+    @media (max-width: 600px) {
+        .row{
+            flex-direction: column;
+        }
+    }
