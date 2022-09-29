@@ -4,10 +4,10 @@
     padding: 0;
     }
     body{
-     font-family: 'Courier New', Courier, monospace;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .header {
-    background-color:  light gray;
+    background-color: rgb(33, 33, 33);
     padding: 30px;
     text-align: center;
     font-size: 30px;
@@ -17,22 +17,24 @@
     }
     .column {
     padding: 10px;
-    height: 250px;
+    min-height: 440px;
+    border-style: inset;
     }
-    
+
     .column.side {
         flex: 3;
     }
     .column.middle {
-        flex:6
+        flex:6;
+        
     }
+    .column.middle img{
+        object-fit: cover;
+    }
+
     .footer {
-    background-color: aliceblue;
+    background-color: rgb(33, 33, 33);
     padding: 10px;
     text-align: left;
-    }
-    @media (max-width: 600px) {
-        .row{
-            flex-direction: column;
-        }
+    min-height: 190px;
     }
