@@ -5,12 +5,14 @@
     }
     body{
      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(24, 24, 24);
     }
     .header {
     background-color: rgb(33, 33, 33);
     padding: 30px;
     text-align: center;
     font-size: 30px;
+    border-style: outset;
     }
     .row {
         display: flex;
@@ -22,19 +24,21 @@
     }
 
     .column.side {
-        flex: 3;
+        flex: 9;
     }
     .column.middle {
         flex:6;
-        
     }
-    .column.middle img{
-        object-fit: cover;
-    }
-
     .footer {
     background-color: rgb(33, 33, 33);
     padding: 10px;
     text-align: left;
-    min-height: 190px;
+    min-height: 120px;
+    border-style: outset;
+    text-align: center;
+    }
+    .img-katt {
+        width: 460px;
+        background-image: url(Felicette.jpg);
+        background-size: 100%;
     }
